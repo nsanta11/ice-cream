@@ -5,7 +5,7 @@ $(function() {
       var newDevour = $(this).data("newdevour");
   
       var newDevouredState = {
-        devoured: newDevour
+        devoured: newDevour,
       };
   
       // Send the PUT request.
@@ -24,16 +24,17 @@ $(function() {
     $(".create-form").on("submit", function(event) {
       // Make sure to preventDefault on a submit event.
       event.preventDefault();
-  
+
+      var id = $(this).data("id");
       var newSundae = {
-        name: $("#ic").val().trim(),
+        name: $("#ic").val().trim()
         //devoured: $("[name=devoured]:checked").val().trim()
       };
   
       // Send the POST request.
       $.ajax("/api/icecream", {
         type: "POST",
-        data: newSundae
+        data: newSundae, id
       }).then(
         function() {
           console.log("created new sundae");
