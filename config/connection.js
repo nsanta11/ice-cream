@@ -3,7 +3,7 @@ var mysql = require("mysql");
 
 var connection = mysql.createConnection({
   port: 3306,
-  host: "localhost",
+  host: "cloud_instance_private_ip",
   user: "root",
   password: "test",
   database: "icecream_db",
