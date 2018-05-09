@@ -4,7 +4,7 @@ DROP DATABASE IF EXISTS icecream_db;
 
 CREATE DATABASE  icecream_db;
 
-USE  icecream_db;
+USE lri6zp5bxk0dqsyw;
 
 CREATE TABLE icecream (
   id INT NOT NULL AUTO_INCREMENT,
