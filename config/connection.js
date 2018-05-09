@@ -3,11 +3,11 @@ var mysql = require("mysql");
 
 var connection = mysql.createConnection({
   port: 3306,
-  host: "localhost",
-  user: "root",
-  password: "test",
-  database: "icecream_db",
-  socket: "socket/tmp/mysql.sock"
+  host: "mgs0iaapcj3p9srz.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+  user: "wxoek5qmpq5px8et",
+  password: "o4uade6tsobadp9v",
+  database: "lri6zp5bxk0dqsyw",
+
 });
 
 // Make connection.
