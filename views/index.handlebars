@@ -5,7 +5,7 @@
 <ul>
   {{#each icecream}}
     {{#unless devoured}}
-      {{> icecream/sundae devour=true}}
+      {{> icecream/sundae devoured=true}}
     {{/unless}}
   {{/each}}
 </ul>
@@ -15,7 +15,7 @@
 <ul>
   {{#each icecream}}
     {{#if devoured}}
-      {{> icecream/sundae devour=false}}
+      {{> icecream/sundae devoured=false}}
     {{/if}}
   {{/each}}
 </ul>
