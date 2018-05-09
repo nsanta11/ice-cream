@@ -3,11 +3,10 @@ var mysql = require("mysql");
 
 var connection = mysql.createConnection({
   port: 3306,
-  host: "cloud_instance_private_ip",
+  host: "localhost",
   user: "root",
   password: "test",
   database: "icecream_db",
-  socketPath: "/var/run/mysqld/mysqld.sock"
 });
 
 // Make connection.
